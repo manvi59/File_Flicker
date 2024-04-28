@@ -7,7 +7,9 @@ const Header = () => {
         <header className="bg-white">
   <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8 border-b">
      
-    <Image src='/logo.svg' width={150} height={100} />
+    {/* <Image src='/logo.svg' width={150} height={100} /> */}
+    <div className=' text-blue-800 folt-bold font-semibold text-2xl'>File Flicker</div>
+    
 
     <div className="flex flex-1 items-center justify-end md:justify-between">
       <nav aria-label="Global" className="hidden md:block">

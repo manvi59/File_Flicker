@@ -10,21 +10,21 @@ const SideNav = () => {
 
         {
             id:1,
-            name:'Upload',
+            name:'upload',
             icon:Upload,
             path:'/upload'
   
         },
         {
             id:2,
-            name:'Files',
+            name:'files',
             icon:File,
             path:'/files'
   
         },
         {
             id:3,
-            name:'Upgrade',
+            name:'upgrade',
             icon:Shield,
             path:'/upgrade'
   
@@ -36,7 +36,8 @@ const SideNav = () => {
     <div className='shadow-sm border-r h-full'>
 
         <div className='p-5 border-b'>
-            <Image src='/logo.svg' width={150} height={100} />
+            {/* <Image src='/logo.svg' width={150} height={100} /> */}
+            <div className=' text-blue-800 folt-bold font-semibold text-3xl'>File Flicker</div>
 
         </div>
 
@@ -46,9 +47,12 @@ const SideNav = () => {
 
             <button className={`flex gap-2 p-4 px-6 hover:bg-gray-100 w-full text-gray-500
             ${activeIndex==index?'bg-blue-50 text-primary':null} `} 
-            onClick={()=>setActiveIndex(index)}>
+            onClick={()=>setActiveIndex(index)}  >
                 <item.icon/>
-                <h2>{item.name}</h2>
+               <a href={`/${item.name}`} >
+               <h2>{item.name}</h2> 
+               
+               </a> 
             </button>
 
         ))}
